@@ -7,9 +7,10 @@ GET http://localhost:3000/users
 ### users by role
 
 GET http://localhost:3000/users?role=INTERN
+
 ### users by id
 
-GET http://localhost:3000/users/1234
+GET http://localhost:3000/users/6
 
 ### Create user
 
@@ -17,13 +18,18 @@ POST http://localhost:3000/users
 content-type: application/json
 
 {
-    "first_name":"Christian"
+    "name":"Christian"
 }
 ### Update user
 
-PATCH  http://localhost:3000/users/123
+PATCH  http://localhost:3000/users/
 content-type: application/json
 
 {
-    "first_name":"Christian"
+    "name":"Christian Mayer"
 }
+
+### Delete user
+
+DELETE   http://localhost:3000/users/2
+
