@@ -2,7 +2,7 @@ GET http://localhost:3000/
 
 ### employees
 
-GET http://localhost:3000/employees
+GET http://localhost:3000/api/employees
 
 ### employees by role
 
@@ -10,7 +10,7 @@ GET http://localhost:3000/employees?role=INTERN
 
 ### employees by id
 
-GET http://localhost:3000/employees/6
+GET http://localhost:3000/api/employees/1
 
 ### Create user
 
@@ -18,18 +18,18 @@ POST http://localhost:3000/employees
 content-type: application/json
 
 {
-    "name":"Christian Mayer",
-    "email":"testing@testing.com",
-    "role":"ADMIN"
+    "name":"Loree Mayer",
+    "email":"testingl@testing.com",
+    "role":"INTERN"
 }
 ### Update user
 
-PATCH  http://localhost:3000/employees/
+PATCH  http://localhost:3000/employees/2
 content-type: application/json
 
 {
-    "name":"Christian Mayer",
-    "email":"testing@testing.com",
+    "name":"Loree Mayer",
+    "email":"testingl@testing.com",
     "role":"ADMIN"
 }
 
